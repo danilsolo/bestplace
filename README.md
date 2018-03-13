@@ -10,7 +10,15 @@
 ~~~
 # Напишите тут типы запросов.
 
-
+OPTIONS
+GET
+HEAD
+POST
+PUT
+PATCH
+DELETE
+TRACE
+CONNECT
 
 ~~~
 
