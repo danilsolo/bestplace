@@ -114,14 +114,15 @@ $.ajax(url, doSomthing())
 
 *Это js-вопрос. Для теста на бекенд этот вопрос можно пропустить*
 
-https://javascript.ru/forum/events/30175-nepoluchaetsya-zapretit-perekhod-po-ssylke.html
-
 Допустим, мы повесили обработчик на событие “click” гиперссылки. Что нужно дописать в обработчике, чтобы прекратить обработку события и предотвратить переход по этой ссылке?
 
 
 ~~~javascript
 // Напишите код тут
-
+const a = document.getElementById('link')
+a.addEventListener("click", e => {
+	e.preventDefault()
+}, false);
 
 ~~~
 
