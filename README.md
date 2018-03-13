@@ -149,10 +149,10 @@ a.addEventListener("click", e => {
 
 ~~~javascript
 // Закоментируйте неправильные варианты
-arr[0] = a
+//arr[0] = a
 arr[arr.length] = a
-arr[arr.length - 1] = a
-arr[-1] = a
+//arr[arr.length - 1] = a
+//arr[-1] = a
 ~~~
 
 
