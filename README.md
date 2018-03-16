@@ -67,7 +67,12 @@ CONNECT
 // Сигнатура на js
 function median3(a, b, c) {
     // Впишите код тут, если решаете на js
-    return 0
+	if (a > b) {
+		if (c > a) return a;
+		return (b > c) ? b : c;
+	}
+	if (c > b) return b;
+	return (a > c) ? a : c;
 }
 ~~~
 
@@ -77,7 +82,11 @@ function median3(a, b, c) {
 # Сигнатура на python
 def median3(a, b, c):
     # Впишите код тут, если решаете на python
-    return 0
+    if a > b:
+        if c > a: return a
+        return b if b > c else c
+    if c > b: return b
+    return a if a > c else c
 ~~~
 
 
